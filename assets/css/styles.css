@@ -37,9 +37,12 @@ a {
 }
 
 /* Header */
+.header {
+    background: #fffcf4;
+}
+
 .header.fixed {
     position: sticky;
-    padding-top: 28px;
     top: -28px;
     background: #fffcf4;
 }
@@ -47,7 +50,7 @@ a {
 .header .body {
     display: flex;
     align-items: center;
-    padding: 8px 0;
+    padding: 36px 0 8px;
 }
 
 .nav {
@@ -87,4 +90,5 @@ a {
 
 .header .sign-up-btn {
     min-width: 144px;
+    margin-left: 49px;
 }
