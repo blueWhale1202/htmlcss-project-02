@@ -89,6 +89,24 @@ a {
     word-break: break-all;
 }
 
+.dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #ffb900;
+    cursor: default;
+}
+
 /* Header */
 .header {
     background: #fffcf4;
@@ -471,19 +489,6 @@ a {
 
 .feedback-item .dots {
     margin-top: 28px;
-    display: flex;
-    gap: 6px;
-}
-
-.feedback-item .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #634700;
-}
-
-.feedback-item .dot.active {
-    background: #ffb900;
 }
 
 .feedback-item .content {
@@ -561,4 +566,105 @@ a {
     width: 470px;
     height: 440px;
     border-radius: 20px;
+}
+
+/* Blog */
+.blog {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #fffcf4;
+}
+
+.blog-top {
+    text-align: center;
+}
+
+.blog-top .desc {
+    margin: 16px auto 0;
+    width: 448px;
+}
+
+.blog-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.blog-item {
+    background: #ffffff;
+    border-radius: 16px;
+
+    /* 20px cho phần gap */
+    width: calc(33.33% - 20px);
+    flex-shrink: 0;
+}
+
+.blog-item:hover {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.blog-item .thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog-item .info {
+    padding: 20px;
+    padding-bottom: 28px;
+}
+
+.blog-item .info .date {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 1.86%;
+    color: #5f5b53;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.blog-item .info .date::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-right: 4px;
+}
+
+.blog-item .info .date::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: -27px;
+    content: "";
+    background: #e2dfda;
+    border-radius: 0.5px;
+    height: 1px;
+}
+
+.blog-item .info .title a {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;
+}
+
+.blog-item .cta-btn {
+    margin-top: 12px;
+    font-size: 1.4rem;
+}
+
+.blog-item .cta-btn:hover {
+    background: var(--primary-color);
+}
+
+.blog .dots {
+    margin-top: 38px;
+    justify-content: center;
 }
