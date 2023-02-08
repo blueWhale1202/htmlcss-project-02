@@ -38,6 +38,7 @@ a {
     min-width: 118px;
     border-radius: 99999px;
     background: #171100;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -496,4 +497,68 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+
+/* Feature */
+.feature {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.feature .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature .images {
+    display: flex;
+    gap: 30px;
+}
+
+.feature .images img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+}
+
+.feature .images img.lower {
+    margin-top: 34px;
+}
+
+.feature .content {
+    width: 41%;
+}
+
+.feature .content .desc {
+    margin-top: 16px;
+}
+
+.feature .content .desc.lower {
+    margin-top: 30px;
+}
+
+.feature .content .cta-btn {
+    margin-top: 38px;
+    min-width: 137px;
+    background: var(--primary-color);
+}
+
+/* Feature 2nd */
+.feature-2nd {
+    margin-top: 70px;
+}
+
+.feature-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.feature-2nd .content {
+    width: 49%;
+}
+
+.feature-2nd .images img {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
 }
